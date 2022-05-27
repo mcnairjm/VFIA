@@ -22,6 +22,7 @@ export default class NavBar extends Component {
                 <ul className='nav-items'>
                     <li className='nav-item'>
                         <Link
+                            className='link'
                             activeClass='active'
                             to='section1'
                             spy={true}
@@ -34,6 +35,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className='nav-item'>
                         <Link
+                            className='link'
                             activeClass='active'
                             to='section2'
                             spy={true}
@@ -46,6 +48,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className='nav-item'>
                         <Link
+                            className='link'
                             activeClass='active'
                             to='section3'
                             spy={true}
@@ -58,6 +61,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className='nav-item'>
                         <Link
+                            className='link'
                             activeClass='active'
                             to='section4'
                             spy={true}
@@ -70,6 +74,7 @@ export default class NavBar extends Component {
                     </li>
                     <li className='nav-item'>
                         <Link
+                            className='link'
                             activeClass='active'
                             to='section5'
                             spy={true}
