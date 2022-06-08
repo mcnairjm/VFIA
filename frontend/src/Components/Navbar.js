@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../Assets/Images/logo.jpg';
+import full from '../Assets/Images/full.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 
@@ -14,7 +14,7 @@ export default class NavBar extends Component {
         <nav className='nav' id='navbar'>
             <div className='nav-content'>
                 <img
-                    src={logo}
+                    src={full}
                     className='nav-logo'
                     alt='logo'
                     onClick={this.scrollToTop}
@@ -25,7 +25,7 @@ export default class NavBar extends Component {
                         <Link
                             className='link'
                             activeClass='active'
-                            to='section2'
+                            to='section1'
                             spy={true}
                             smooth={true}
                             offset={-70}
@@ -38,7 +38,7 @@ export default class NavBar extends Component {
                         <Link
                             className='link'
                             activeClass='active'
-                            to='section3'
+                            to='section2'
                             spy={true}
                             smooth={true}
                             offset={-70}
@@ -51,7 +51,7 @@ export default class NavBar extends Component {
                         <Link
                             className='link'
                             activeClass='active'
-                            to='section4'
+                            to='section3'
                             spy={true}
                             smooth={true}
                             offset={-70}

@@ -13,8 +13,8 @@
 }
 
 .nav-logo {
-    height: 70px;
-    width: 175px;
+    height: 435px;
+    width: 418px;
 }
 
 .nav-logo:hover {
@@ -57,7 +57,31 @@
 }
 
 .section-content {
-    max-width: 800px;
+    max-width: 1700px;
     margin: 0 auto;
     padding: 40px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.full-logo {
+    height: 308px;
+    width: 583px;
+    margin: 25px;
+}
+
+.info {
+    margin: 25px;
+}
+
+.title {
+    text-align: center;
+}
+
+.text {
+    padding-top: 10px;
+    padding-left: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
