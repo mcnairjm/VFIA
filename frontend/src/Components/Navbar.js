@@ -20,19 +20,7 @@ export default class NavBar extends Component {
                     onClick={this.scrollToTop}
                 />
                 <ul className='nav-items'>
-                    <li className='nav-item'>
-                        <Link
-                            className='link'
-                            activeClass='active'
-                            to='section1'
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            Section 1
-                        </Link>
-                    </li>
+                    
                     <li className='nav-item'>
                         <Link
                             className='link'
@@ -43,7 +31,7 @@ export default class NavBar extends Component {
                             offset={-70}
                             duration={500}
                         >
-                            Section 2
+                            Who We Are
                         </Link>
                     </li>
                     <li className='nav-item'>
@@ -56,7 +44,7 @@ export default class NavBar extends Component {
                             offset={-70}
                             duration={500}
                         >
-                            Section 3
+                            Meet The Team
                         </Link>
                     </li>
                     <li className='nav-item'>
@@ -69,21 +57,11 @@ export default class NavBar extends Component {
                             offset={-70}
                             duration={500}
                         >
-                            Section 4
+                            Reach Out
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link
-                            className='link'
-                            activeClass='active'
-                            to='section5'
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            Section 5
-                        </Link>
+                        
                     </li>
                 </ul>
             </div>
@@ -91,4 +69,3 @@ export default class NavBar extends Component {
     )
     }
 }
-
