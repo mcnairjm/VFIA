@@ -76,6 +76,7 @@
 
 .title {
     text-align: center;
+    padding-top: 25px;
 }
 
 .text {
@@ -84,4 +85,21 @@
     font-size: 30px;
     text-align: center;
 }
+
+.MLA {
+    height: 533px;
+    width: 535px;
+    float: right;
+}
+
+.mla-text {
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 550px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
 
