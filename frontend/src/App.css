@@ -51,10 +51,7 @@
     background-position: center;
 }
 
-.section-dark {
-    background: #333;
-    color: white;
-}
+
 
 .section-content {
     max-width: 1700px;
@@ -67,7 +64,6 @@
 .full-logo {
     height: 308px;
     width: 583px;
-    margin: 25px;
 }
 
 .info {
@@ -89,7 +85,8 @@
 .MLA {
     height: 533px;
     width: 535px;
-    float: right;
+    float: left;
+    margin: 25px;
 }
 
 .mla-text {
