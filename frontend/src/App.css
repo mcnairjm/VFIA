@@ -41,7 +41,17 @@
     cursor: pointer;
 }
 
-.heroContent { 
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 857px;
+    transition: ease 4000ms;
+}
+
+
+/* .heroContent { 
     height: 550px;
     width: 100%;
     top: 0;
@@ -49,7 +59,7 @@
     background: url('../src/Assets/Images/Grocery.jpg');
     background-size: cover;
     background-position: center;
-}
+} */
 
 
 

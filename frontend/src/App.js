@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './Components/Navbar';
-import Hero from './Components/Hero';
+import Slideshow from './Components/Slide';
 import Section from './Components/Section';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <NavBar />
 
-      <Hero />
+      <Slideshow />
 
       <Section />
 
