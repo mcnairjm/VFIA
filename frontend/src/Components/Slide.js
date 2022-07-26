@@ -9,10 +9,10 @@ import woman from '../Assets/Images/woman-shopper.jpg';
 
 const Slideshow = () => {
     const images = [
-        "https://github.com/mcnairjm/VFIA/blob/40bbb709fd54d2c879831e7981ccd68655d92a67/frontend/src/Assets/Images/cart.jpg?raw=true",
-        "https://github.com/mcnairjm/VFIA/blob/40bbb709fd54d2c879831e7981ccd68655d92a67/frontend/src/Assets/Images/employee.jpg?raw=true",
-        "https://github.com/mcnairjm/VFIA/blob/40bbb709fd54d2c879831e7981ccd68655d92a67/frontend/src/Assets/Images/wine-guy.jpg?raw=true",
-        "https://github.com/mcnairjm/VFIA/blob/40bbb709fd54d2c879831e7981ccd68655d92a67/frontend/src/Assets/Images/woman-shopper.jpg?raw=true"
+        "https://github.com/mcnairjm/VFIA/blob/b97257f52c5a97752cdc85459cf9ba1c2d26de72/frontend/src/Assets/Images/cart1.jpg?raw=true",
+        "https://github.com/mcnairjm/VFIA/blob/b97257f52c5a97752cdc85459cf9ba1c2d26de72/frontend/src/Assets/Images/employee1.jpg?raw=true",
+        "https://github.com/mcnairjm/VFIA/blob/b97257f52c5a97752cdc85459cf9ba1c2d26de72/frontend/src/Assets/Images/wine-guy1.jpg?raw=true",
+        "https://github.com/mcnairjm/VFIA/blob/b97257f52c5a97752cdc85459cf9ba1c2d26de72/frontend/src/Assets/Images/woman-shopper1.jpg?raw=true"
     ];
 
     return (
