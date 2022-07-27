@@ -56,7 +56,7 @@
 }
 
 .nextArrow {
-    position: absolute;
+    position: relative;
     top:50%;
     right: 5%;
 }
@@ -99,14 +99,20 @@
 .section-content {
     max-width: 1700px;
     margin: 0 auto;
-    padding: 40px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 857px;
+    align-items: center;
+}
+
+.image {
+    padding-top: 25px;
 }
 
 .full-logo {
-    height: 308px;
-    width: 583px;
+    height: 208px;
+    width: 1000px;
+    position: relative;
 }
 
 .info {
