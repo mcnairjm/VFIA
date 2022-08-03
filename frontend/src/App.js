@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import './index.css';
 import './App.css';
 import NavBar from './Components/Navbar';
 import Slideshow from './Components/Slide';
 import Section from './Components/Section';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -1,20 +1,48 @@
 import React from 'react';
 import vfia from '../Assets/Images/vfia.png';
 import MLA from '../Assets/Images/MLA.jpg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 const Section = () => {
     return (
-        <div>
-            <div className='section-content' id='section1'>
-                <div className='image'>
-                    <img src={vfia}
-                        className='full-logo'/>
-                </div>
-                <h1 className='title'>Our Mission</h1>
-                
-            </div>
+        <>
+            <Container fluid className='section1'>
+                <Row className="justify-content-md-center">
+                    <Col className='image' xs={5} >
+                    
+                        <img src={vfia}
+                            className='full-logo'/>
+                    </Col>
+                </Row>
+                <Row className="justify-content-md-center">
+                    <Col className='about' xs={7}> 
+                        
+                        <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                    </Col>   
+                </Row>
+            </Container>
 
-           {/*  <div className='section-content' id='section2' >
+            <Container>
+                <Row>
+                    <Col>1 of 2</Col>
+                    <Col>2 of 2</Col>
+                </Row>
+                <Row>
+                    <Col>1 of 3</Col>
+                    <Col>2 of 3</Col>
+                    <Col>3 of 3</Col>
+                </Row>
+            </Container>
+        </>
+    );
+}
+
+export default Section;
+
+{/*  <div className='section-content' id='section2' >
                 <img src={MLA} 
                     className='MLA'/>
                 <div className='mla-info'>
@@ -29,9 +57,3 @@ const Section = () => {
                 <h1 className='header'>Reach Out</h1>
                 <p className='text'></p>
             </div> */}
-        </div>
-
-    );
-}
-
-export default Section;
