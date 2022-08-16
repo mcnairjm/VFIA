@@ -4,6 +4,10 @@ import MLA from '../Assets/Images/MLA.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { RiTeamFill } from 'react-icons/ri';
+import { BsFillQuestionCircleFill } from 'react-icons/bs';
+import { GiPublicSpeaker } from 'react-icons/gi';
+import { IconContext } from "react-icons";
 
 
 const Section = () => {
@@ -17,25 +21,44 @@ const Section = () => {
                             className='full-logo'/>
                     </Col>
                 </Row>
-                <Row className="justify-content-md-center">
+                <Row className="justify-content-md-center" id='row2'>
                     <Col className='about' xs={7}> 
                         
                         <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
                     </Col>   
                 </Row>
             </Container>
-
+        <IconContext.Provider value={{ color: '#0b8441', size: '10em'}} >
             <Container>
-                <Row>
-                    <Col>1 of 2</Col>
-                    <Col>2 of 2</Col>
-                </Row>
-                <Row>
-                    <Col>1 of 3</Col>
-                    <Col>2 of 3</Col>
-                    <Col>3 of 3</Col>
+
+                <Row id='row3'>
+                    <Col className='icons'><RiTeamFill />
+                    <p>Networking</p>
+                    </Col>
+                        
+                    <Col className='icons'><BsFillQuestionCircleFill />
+                    <p>Resources</p>
+                    </Col>
+                        
+                    <Col className='icons'><GiPublicSpeaker />
+                    <p>Representation</p>
+                    </Col>
+                        
                 </Row>
             </Container>
+
+            <Container fluid className='section2'>
+                <Row className='row4'>
+                    <Col>
+                        <img src={MLA}
+                        className='MLA'></img>
+                    </Col>
+                    <Col>
+                        <p className='mla-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </Col>
+                </Row>
+            </Container>
+        </IconContext.Provider>
         </>
     );
 }
