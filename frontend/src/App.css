@@ -135,7 +135,15 @@ body {
     text-align: center;
 }
 
+.section2 {
+    height: 75vh;
+    position: relative;
+}
+
 #row4 {
+    margin: 0;
+    position: absolute;
+    top: 15%;
     align-items: center;
 }
 
@@ -148,7 +156,16 @@ body {
 .mla-text {
     
     font-size: 30px;
+    text-align: center;
     
+}
+
+.section3 {
+    height: 35vh;
+    background-color: darkgray;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 

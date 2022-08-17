@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './Components/Navbar';
 import Slideshow from './Components/Slide';
 import Section from './Components/Section';
+import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <Slideshow />
 
       <Section />
+
+      <Footer />
 
       {/* <Section
         title='Mission'
