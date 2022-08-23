@@ -8,26 +8,38 @@ import { RiTeamFill } from 'react-icons/ri';
 import { BsFillQuestionCircleFill } from 'react-icons/bs';
 import { GiPublicSpeaker } from 'react-icons/gi';
 import { IconContext } from "react-icons";
+import 'animate.css/animate.min.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const Section = () => {
     return (
         <>
-            <Container fluid className='section1'>
-                <Row className="justify-content-md-center">
-                    <Col className='image' xs={5} >
-                    
-                        <img src={vfia}
-                            className='full-logo'/>
-                    </Col>
-                </Row>
-                <Row className="justify-content-md-center" id='row2'>
-                    <Col className='about' xs={7}> 
+            <ScrollAnimation duration={2}
+                animateIn='animate__fadeInUp'
+                animateOnce='true'
+                delay={2}>
+                <Container fluid className='section1'>
+                
+                    <Row className="justify-content-md-center">
+                        <Col className='image' xs={5} >
                         
-                        <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-                    </Col>   
-                </Row>
-            </Container>
+                        
+                            <img src={vfia}
+                                className='full-logo'/>
+                        
+                        </Col>
+                    </Row>
+                
+                    <Row className="justify-content-md-center" id='row2'>
+                        <Col className='about' xs={7}> 
+                            
+                            <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                        </Col>   
+                    </Row>
+                </Container>
+            </ScrollAnimation>
+            
         <IconContext.Provider value={{ color: '#0b8441', size: '10em'}} >
             <Container>
 
