@@ -23,6 +23,10 @@ body {
     width: 418px;
 }
 
+a {
+    color: black;
+}
+
 .nav-logo:hover {
     cursor: pointer;
 }
@@ -155,7 +159,7 @@ body {
 
 .mla-text {
     
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     
 }

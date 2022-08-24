@@ -34,7 +34,7 @@ const Section = () => {
                     <Row className="justify-content-md-center" id='row2'>
                         <Col className='about' xs={7}> 
                             
-                            <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                            <p className='info'>The Virginia Food Industry Association (VFIA) is a nonprofit trade association that serves as an advocate for the retail and wholesale food industries in the Commonwealth of Virginia. Collectively, VFIA’s members employ more than 50,000 people statewide at more than 530 retail locations. </p> 
                         </Col>   
                     </Row>
                 </Container>
@@ -42,6 +42,8 @@ const Section = () => {
             
         <IconContext.Provider value={{ color: '#0b8441', size: '10em'}} >
             <Container>
+            
+            
 
                 <Row id='row3'>
                     <Col className='icons'><RiTeamFill />
@@ -54,10 +56,11 @@ const Section = () => {
                         
                     <Col className='icons'><GiPublicSpeaker />
                     <p>Representation</p>
-                    </Col>
-                        
+                    </Col>        
                 </Row>
+            
             </Container>
+        </IconContext.Provider>
 
             <Container fluid className='section2'>
                 <Row className="justify-content-md-center" id='row4'>
@@ -67,11 +70,11 @@ const Section = () => {
                     </Col>
                     <Col xs lg='1'></Col>
                     <Col xs lg='4'>
-                        <p className='mla-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p className='mla-text'>VFIA Executive Director, Melissa Assalone, oversees the day-to-day operations of the Association. In addition, Melissa serves as the primary lobbyist for the Virginia Food Industry Association to the General Assembly. She also works on grocery-specific issues like food safety, emergency preparedness and response, and SNAP and WIC. Melissa brings VFIA expertise in Virginia’s legislative and regulatory processes having served as deputy legislative director for Governor Ralph Northam’s administration. Melissa also served as the Director of Government Relations for the American Heart Association. She has a bachelor’s degree from the University of Wisconsin and a master’s degree from Virginia Commonwealth University (VCU). In addition, Assalone received a Certificate of Nonprofit Management from VCU and is a graduate of the Political Leaders Program administered by The Sorenson Institute.</p>
                     </Col>
                 </Row>
             </Container>
-        </IconContext.Provider>
+        
         </>
     );
 }
