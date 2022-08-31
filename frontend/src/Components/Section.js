@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import vfia from '../Assets/Images/vfia.png';
 import MLA from '../Assets/Images/MLA.jpg';
 import Container from 'react-bootstrap/Container';
@@ -10,9 +10,20 @@ import { GiPublicSpeaker } from 'react-icons/gi';
 import { IconContext } from "react-icons";
 import 'animate.css/animate.min.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import WebFont from 'webfontloader';
+
+
 
 
 const Section = () => {
+
+    useEffect(() => {
+        WebFont.load({
+            google: {
+                families: ['Montserrat:wght@100&display=swap']
+            }
+        });
+    });
     return (
         <>
             <ScrollAnimation duration={2}
@@ -69,7 +80,7 @@ const Section = () => {
                         className='MLA'></img>
                     </Col>
                     <Col xs lg='1'></Col>
-                    <Col xs lg='4'>
+                    <Col xs lg='6'>
                         <p className='mla-text'>VFIA Executive Director, Melissa Assalone, oversees the day-to-day operations of the Association. In addition, Melissa serves as the primary lobbyist for the Virginia Food Industry Association to the General Assembly. She also works on grocery-specific issues like food safety, emergency preparedness and response, and SNAP and WIC. Melissa brings VFIA expertise in Virginia’s legislative and regulatory processes having served as deputy legislative director for Governor Ralph Northam’s administration. Melissa also served as the Director of Government Relations for the American Heart Association. She has a bachelor’s degree from the University of Wisconsin and a master’s degree from Virginia Commonwealth University (VCU). In addition, Assalone received a Certificate of Nonprofit Management from VCU and is a graduate of the Political Leaders Program administered by The Sorenson Institute.</p>
                     </Col>
                 </Row>

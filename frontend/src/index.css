@@ -10,12 +10,12 @@
 }
 
 *,
-html {
+/* html {
 	line-height: 1em;
 	padding: 0;
 	margin: 0;
 	font-family: 'Libre Franklin', sans-serif;
-}
+} */
 
 body {
 	margin: 0;
