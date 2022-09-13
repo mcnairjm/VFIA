@@ -168,7 +168,15 @@ a {
     
 }
 
-.section3 {
+.section3{
+    text-align: center;
+}
+
+.form {
+    margin: 0 650px 0 650px;
+}
+
+.section4 {
     height: 35vh;
     background-color: darkgray;
     max-width: 100%;

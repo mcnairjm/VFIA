@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const ContactForm = () => {
     const [status, setStatus] = useState('Submit');
@@ -24,21 +26,25 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor='name'>Name:</label>
-                <input type='text' id='name' required />
-            </div>
-            <div>
-                <label htmlFor='email'>Email:</label>
-                <input type='email' id='email' required />
-            </div>
-            <div>
-                <label htmlFor='message'>Message:</label>
-                <textarea id='message' required />
-            </div>
-            <button type='submit'>{status}</button>
-        </form>
+        <>
+        <h1 className='section3'>Reach Out</h1>
+        <Form className='form' onSubmit={handleSubmit}>
+            <Form.Group className='mb-3' controlId='formName'>
+                <Form.Label htmlFor='name'>Name:</Form.Label>
+                <Form.Control placeholder='Your Name Here' type='text' id='name' required />
+            </Form.Group>
+            <Form.Group className='mb-3' controlId='formEmail'>
+                <Form.Label htmlFor='email'>Email:</Form.Label>
+                <Form.Control type='email' placeholder='Enter email' id='email' required />
+            </Form.Group>
+            <Form.Group className='mb-3' controlId='formText'>
+                <Form.Label htmlFor='message'>Message:</Form.Label>
+                <Form.Control as='textarea' rows={3} id='message' required />
+            </Form.Group>
+            <Button variant='primary' type='submit'>{status}</Button>
+        
+        </Form>
+        </>
     );
 };
 
