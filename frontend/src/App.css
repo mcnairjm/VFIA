@@ -180,11 +180,18 @@ a {
     height: 35vh;
     background-color: darkgray;
     max-width: 100%;
-    margin: 0;
+    margin-top: 55px;
     padding: 0;
     font-family: 'Montserrat';
     font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+
+
+
 
 
 
