@@ -31,6 +31,11 @@ a {
     cursor: pointer;
 }
 
+.link {
+    text-decoration: none;
+    color: #0b8441;
+}
+
 .nav .nav-content {
     max-width: 900px;
     padding: 0rem 3rem;
@@ -45,6 +50,10 @@ a {
     display: inline;
     margin-left: 2rem;
     color: #333;
+}
+
+.nav-items {
+    padding-top: 15px;
 }
 
 .nav-item:hover {
@@ -110,7 +119,7 @@ a {
 
 
 .section1 {
-    height: 75vh;
+    height: 70vh;
     font-family: 'Montserrat';
     font-weight: 200;
 }
@@ -134,11 +143,12 @@ a {
 }
 
 #row2 {
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 #row3 {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .section2 {
@@ -146,6 +156,7 @@ a {
     position: relative;
     font-family: 'Montserrat';
     font-weight: 350;
+    background-color: rgba(11, 132, 65, .6);
 }
 
 #row4 {
@@ -165,28 +176,42 @@ a {
     
     font-size: 25px;
     text-align: center;
+    color: white;
     
 }
 
 .section3{
     text-align: center;
+    margin-top: 40px;
+}
+
+.formText {
+    text-align: center;
 }
 
 .form {
-    margin: 0 650px 0 650px;
+    margin: 0 650px 80px 650px;
 }
 
 .section4 {
-    height: 35vh;
+    height: 25vh;
     background-color: darkgray;
     max-width: 100%;
-    margin-top: 55px;
+    margin-top: 5px;
     padding: 0;
     font-family: 'Montserrat';
     font-weight: 200;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.address {
+    margin: 65px;
+}
+
+.copy {
+    margin: 100px;
 }
 
 

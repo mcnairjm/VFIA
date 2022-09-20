@@ -7,10 +7,11 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('Sending...');
-        const { name, email, message } = e.target.elements;
+        const { name, email, subject, message } = e.target.elements;
         let details = {
             name: name.value,
             email: email.value,
+            subject: subject.value,
             message: message.value,
         };
         let response = await fetch ('http://localhost:5000/contact', {
@@ -28,6 +29,7 @@ const ContactForm = () => {
     return (
         <>
         <h1 className='section3'>Reach Out</h1>
+        <p className='formText'>For any questions or inquiries about membership, please reach out to us via the form below or directly at <a href='mailto:MelissaA@VAFoodIndustry.org'>MelissaA@VAFoodIndustry.org</a></p>
         <Form className='form' onSubmit={handleSubmit}>
             <Form.Group className='mb-3' controlId='formName'>
                 <Form.Label htmlFor='name'>Name:</Form.Label>
@@ -36,6 +38,10 @@ const ContactForm = () => {
             <Form.Group className='mb-3' controlId='formEmail'>
                 <Form.Label htmlFor='email'>Email:</Form.Label>
                 <Form.Control type='email' placeholder='Enter email' id='email' required />
+            </Form.Group>
+            <Form.Group classname='mb-3' controlId='formSubject'>
+                <Form.Label htmlFor='subject'>Subject</Form.Label>
+                <Form.Control type='text' placeholder='Enter Subject' id='subject' required />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formText'>
                 <Form.Label htmlFor='message'>Message:</Form.Label>

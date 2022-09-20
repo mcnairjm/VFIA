@@ -3,7 +3,6 @@ import full from '../Assets/Images/full.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Nav from 'react-bootstrap/Nav';
 
-
 export default class NavBar extends Component {
     scrollToTop = () => {
         scroll.scrollToTop();
@@ -13,7 +12,7 @@ export default class NavBar extends Component {
 
     return (
     <>
-        <Nav className='justify-content-center' activeKey='/home' id='navbar'>
+         <Nav className='justify-content-center' activeKey='/home' id='navbar'>
             <Nav.Item className='nav-content'>
                 <img
                     src={full}
@@ -67,7 +66,7 @@ export default class NavBar extends Component {
                     </li>
                 </ul>
             </Nav.Item>
-        </Nav>
+        </Nav> 
     </>
     )
     }
