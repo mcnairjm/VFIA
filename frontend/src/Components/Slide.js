@@ -26,8 +26,7 @@ const Slideshow = () => {
         <Slide {...properties}>
             <div className="each-slide-effect">
                 <div style={{ 'backgroundImage': `url(${images[0]})` }}>
-                    <span className='span'>For Grocers.</span>
-                    <span className='span1'>For Virginia.</span>
+                
                 </div>
             </div>
             <div className="each-slide-effect">

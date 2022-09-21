@@ -58,15 +58,15 @@ const Section = () => {
 
                 <Row id='row3'>
                     <Col className='icons'><RiTeamFill />
-                    <p>Networking</p>
+                    <p className='subhead'>Networking</p>
                     </Col>
                         
                     <Col className='icons'><BsFillQuestionCircleFill />
-                    <p>Resources</p>
+                    <p className='subhead'>Resources</p>
                     </Col>
                         
                     <Col className='icons'><GiPublicSpeaker />
-                    <p>Representation</p>
+                    <p className='subhead'>Representation</p>
                     </Col>        
                 </Row>
             

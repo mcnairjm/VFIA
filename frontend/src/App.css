@@ -86,9 +86,10 @@ a {
     font-weight: bold;
     color: black;
     -webkit-text-stroke: 1px white;
-    position: absolute;
-    top: 35%;
-    transform: translateX(400px)
+    position: relative;
+    bottom: 10%;
+    left: 21%;
+    
 }
 
 .span1 {
@@ -149,6 +150,12 @@ a {
 #row3 {
     text-align: center;
     margin-bottom: 50px;
+    position: absolute;
+}
+
+.subhead {
+    font-size: 35px;
+    font-weight: 200;
 }
 
 .section2 {
@@ -214,7 +221,27 @@ a {
     margin: 100px;
 }
 
-
+@media screen and (max-width: 1519px) {
+    .span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 95px;
+        font-weight: bold;
+        color: black;
+        -webkit-text-stroke: 1px white;
+        bottom: 25%;
+        left: 21%;
+    }
+    
+    .span1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 95px;
+        font-weight: bold;
+        color: black;
+        -webkit-text-stroke: 1px white;
+        top: 50%;
+        transform: translateX(465px);
+    }
+}
 
 
 

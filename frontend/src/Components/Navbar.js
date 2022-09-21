@@ -30,7 +30,7 @@ export default class NavBar extends Component {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500}
+                            duration={250}
                         >
                             What We Do
                         </Link>
