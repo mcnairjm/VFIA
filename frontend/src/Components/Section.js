@@ -26,6 +26,7 @@ const Section = () => {
     });
     return (
         <>
+            <div>
             <ScrollAnimation duration={2}
                 animateIn='animate__fadeInUp'
                 animateOnce='true'
@@ -37,6 +38,7 @@ const Section = () => {
                         
                         
                             <img src={vfia}
+                                height='150px'
                                 className='full-logo'/>
                         
                         </Col>
@@ -50,13 +52,18 @@ const Section = () => {
                     </Row>
                 </Container>
             </ScrollAnimation>
+        </div>
+        </>
+    )
+    };
+export default Section;
             
-        <IconContext.Provider value={{ color: '#0b8441', size: '10em'}} >
+       {/*  <IconContext.Provider value={{ color: '#0b8441', size: '10em'}} >
             <Container>
             
             
 
-                <Row id='row3'>
+                <Row className='justify-content-md-center' id='row3'>
                     <Col className='icons'><RiTeamFill />
                     <p className='subhead'>Networking</p>
                     </Col>
@@ -89,11 +96,12 @@ const Section = () => {
                     </Row>
                 </Container>
             </ScrollAnimation>
+        </div>
         </>
     );
-}
+} */}
 
-export default Section;
+
 
 {/*  <div className='section-content' id='section2' >
                 <img src={MLA} 

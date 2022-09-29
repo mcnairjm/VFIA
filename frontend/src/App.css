@@ -5,31 +5,16 @@
 
 body {
     font-family: 'Arvo';
-    
+    margin: auto;
 }
 
-
-
-
-
+/* Nav */
 
 .nav {
     z-index: 1000;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
-/*.nav-logo {
-    height: 435px;
-    width: 418px;
-}
-
-a {
-    color: black;
-}
-
-.nav-logo:hover {
-    cursor: pointer;
-} */
 .tags {
     justify-content: flex-end;
     padding-right: 50px;
@@ -47,39 +32,14 @@ a {
     cursor: pointer;
 }
 
-/* .nav {
-    justify-content: center;
-}
-
-.nav .nav-content {
-    max-width: 900px;
-    padding: 0rem 3rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.nav-item {
-    display: inline;
-    margin-left: 2rem;
-    color: #333;
-}
-
-.nav-items {
-    padding-top: 15px;
-}
-
-.nav-item:hover {
-    cursor: pointer;
-} */
+/* Slide */
 
 .each-slide-effect > div {
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
+    max-width: 100%;
     height: 90vh;
     transition: ease 4000ms;
 }
@@ -95,48 +55,35 @@ a {
     right: 5%;
 }
 
-.span {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 95px;
-    font-weight: bold;
-    color: black;
-    -webkit-text-stroke: 1px white;
-    position: absolute;
-    top: 35%;
-    transform: translateX(400px)
+/* Section 1 */
+
+.section1 {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Montserrat';
 }
 
-.span1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 95px;
-    font-weight: bold;
-    color: black;
-    -webkit-text-stroke: 1px white;
-    position: absolute;
-    top: 45%;
-    transform: translateX(465px);
+.image {
+    min-width: 100%;
+    height: auto;
 }
 
+.full-logo {
+    margin-top: 2%;
+}
 
-
-
-
-
-/* .heroContent { 
-    height: 550px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: url('../src/Assets/Images/Grocery.jpg');
-    background-size: cover;
-    background-position: center;
-} */
-
+#row2 {
+    padding-top: 60px;
+    font-size: 40px;
+}
+/* 
 
 .section1 {
     height: 70vh;
     font-family: 'Montserrat';
     font-weight: 200;
+    display: inline-block;
+   
 }
 
 .full-logo {
@@ -146,6 +93,7 @@ a {
 
 .about {
     text-align: center;
+    margin: auto;
 }
 
 .title {
@@ -174,10 +122,13 @@ a {
 
 .section2 {
     height: 80vh;
-    position: relative;
     font-family: 'Montserrat';
     font-weight: 350;
     background-color: rgba(11, 132, 65, .6);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 #row4 {
@@ -188,8 +139,9 @@ a {
 }
 
 .MLA {
-    height: 533px;
-    width: 535px;
+    width: 100%;
+    height: auto;
+
     
 }
 
@@ -204,6 +156,7 @@ a {
 .section3{
     text-align: center;
     margin-top: 40px;
+    display: inline-block;
 }
 
 .formText {
@@ -212,6 +165,7 @@ a {
 
 .form {
     margin: 0 650px 80px 650px;
+    display: inline-block;
 }
 
 .section4 {
@@ -233,13 +187,14 @@ a {
 
 .copy {
     margin: 100px;
-}
+} */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 575.98px) {
     .nav-logo {
-        max-width: 75%;
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
         max-height: 100%;
-        margin: auto;
     }
 
     .each-slide-effect > div {
@@ -247,7 +202,13 @@ a {
     }
 
     .toggle {
-        display: flex-end;
+        margin-left: 22%;
+    }
+
+    .tags {
+        display: flex;
+        justify-content:flex-start;
+        font-size: 10px;
     }
 }
 
