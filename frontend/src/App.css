@@ -13,6 +13,7 @@ body {
 .nav {
     z-index: 1000;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
 }
 
 .tags {
@@ -58,9 +59,12 @@ body {
 /* Section 1 */
 
 .section1 {
+    position: relative;
     display: inline-block;
     text-align: center;
     font-family: 'Montserrat';
+    font-weight: 200;
+    height: 60vh;
 }
 
 .image {
@@ -75,6 +79,85 @@ body {
 #row2 {
     padding-top: 60px;
     font-size: 40px;
+}
+
+.iconBox {
+    padding-top: 50px;
+}
+
+#row3 {
+    text-align: center;
+}
+
+.subhead {
+    font-size: 25px;
+}
+
+.section2 {
+    padding-top: 50px;
+    background-color: rgba(11, 132, 65, .6);
+    padding-bottom: 50px;
+}
+
+#row4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MLA {
+    border-radius: 50%;
+    border-color: white;
+    border-style: double;
+    border-width: 15px;
+}
+
+.mla-text {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.section3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.formText {
+    text-align: center;
+}
+
+.form {
+    width: 50%;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+
+}
+
+.section4 {
+    height: 20vh;
+    background-color: darkgray;
+    max-width: 100%;
+    margin-top: 40px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.address {
+    margin: 65px;
+}
+
+.copy {
+    margin: 100px;
 }
 /* 
 
@@ -189,12 +272,15 @@ body {
     margin: 100px;
 } */
 
+
 @media screen and (max-width: 575.98px) {
-    .nav-logo {
-        display: flex;
+    .navbar-brand {
         justify-content: center;
-        max-width: 50%;
-        max-height: 100%;
+    }
+    .nav-logo {
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
     }
 
     .each-slide-effect > div {
@@ -202,16 +288,152 @@ body {
     }
 
     .toggle {
-        margin-left: 22%;
+        text-align: center;
     }
 
     .tags {
-        display: flex;
-        justify-content:flex-start;
-        font-size: 10px;
+        justify-content: center;
+        padding-left: 20%;
     }
+
+    .section1 {
+        overflow: auto;
+    }
+    
+    .full-logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #row2 {
+        padding-top: 10px;
+        font-size: 25px;
+        justify-content: center;
+    
+    }
+
+    .iconBox {
+        min-width: 300px;
+        overflow: auto;
+        padding-top: 10px;
+    }
+
+    #row4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MLA {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .space {
+        display: none;
+    }
+
+    .mla-text {
+        padding-top: 25px;
+        overflow: scroll;
+    }
+
+    
+
+    .section4 {
+        text-align: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .address {
+        margin: 0px;
+        padding-top: 10px;
+    }
+    .copy {
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
 }
 
+@media screen and (max-width: 768px) {
+    .nav-logo {
+        padding-left: 15%;
+    }
+    
+    .tags {
+        padding-left: 25%;
+    }
+
+    .each-slide-effect > div {
+        background-size: contain;
+        height: 53vh;
+    }
+
+    .full-logo {
+        width: 500px;
+        height: 100px;
+    }
+
+    .section1 {
+        overflow: scroll;
+    }
+
+    #row2 {
+        padding-top: 20px;
+        justify-content: center;
+    }
+
+    #row4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MLA {
+        padding-left: 15%;
+    }
+
+    .mla-text {
+        padding-top: 15px;
+    }
+
+    .section4 {
+        text-align: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .address {
+        margin: 0px;
+        padding-top: 10px;
+    }
+    .copy {
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .each-slide-effect > div {
+        background-size:cover;    
+    }
+
+    .section1 {
+        overflow: scroll;
+    }
+
+    #row4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+
+
+}
 
 
 

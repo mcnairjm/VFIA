@@ -32,19 +32,19 @@ const ContactForm = () => {
         <p className='formText'>For any questions or inquiries about membership, please reach out to us via the form below or directly at <a href='mailto:MelissaA@VAFoodIndustry.org'>MelissaA@VAFoodIndustry.org</a></p>
         <Form className='form' onSubmit={handleSubmit}>
             <Form.Group className='mb-3' controlId='formName'>
-                <Form.Label htmlFor='name'>Name:</Form.Label>
+                <Form.Label column sm={2} htmlFor='name'>Name:</Form.Label>
                 <Form.Control placeholder='Your Name Here' type='text' id='name' required />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formEmail'>
-                <Form.Label htmlFor='email'>Email:</Form.Label>
+                <Form.Label column sm={2} htmlFor='email'>Email:</Form.Label>
                 <Form.Control type='email' placeholder='Enter email' id='email' required />
             </Form.Group>
             <Form.Group classname='mb-3' controlId='formSubject'>
-                <Form.Label htmlFor='subject'>Subject</Form.Label>
+                <Form.Label column sm={2} htmlFor='subject'>Subject</Form.Label>
                 <Form.Control type='text' placeholder='Enter Subject' id='subject' required />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formText'>
-                <Form.Label htmlFor='message'>Message:</Form.Label>
+                <Form.Label column sm={2} htmlFor='message'>Message:</Form.Label>
                 <Form.Control as='textarea' rows={3} id='message' required />
             </Form.Group>
             <Button variant='primary' type='submit'>{status}</Button>

@@ -4,6 +4,8 @@ import './App.css';
 import NavBar from './Components/Navbar';
 import Slideshow from './Components/Slide';
 import Section from './Components/Section';
+import Icons from './Components/Icons';
+import About from './Components/About';
 import ContactForm from './Components/ContactForm';
 import Footer from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,6 +18,10 @@ function App() {
       <Slideshow />
 
       <Section />
+
+      <Icons />
+
+      <About />
 
       <ContactForm />
 
