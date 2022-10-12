@@ -81,6 +81,10 @@ body {
     font-size: 40px;
 }
 
+.mobile {
+    display: none;
+}
+
 .iconBox {
     padding-top: 50px;
 }
@@ -91,6 +95,7 @@ body {
 
 .subhead {
     font-size: 25px;
+    font-weight: 200;
 }
 
 .section2 {
@@ -113,12 +118,14 @@ body {
 }
 
 .mla-text {
+    padding-top: 10px;
     font-size: 24px;
     text-align: center;
     color: white;
     width: 100%;
     height: auto;
     float: left;
+    color: black;
 }
 
 .section3 {
@@ -296,6 +303,15 @@ body {
         padding-left: 20%;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+    
+
     .section1 {
         overflow: auto;
     }
@@ -391,7 +407,8 @@ body {
     }
 
     .MLA {
-        padding-left: 15%;
+        border-radius: 25;
+        
     }
 
     .mla-text {
@@ -429,10 +446,18 @@ body {
         flex-direction: column;
     }
 
+}
 
-    
+@media screen and (max-width: 1200px) {
+    .section1 {
+        overflow: scroll;
+    }
+}
 
-
+@media screen and (max-width: 1600px) {
+    .section1 {
+        overflow: scroll;
+    }
 }
 
 

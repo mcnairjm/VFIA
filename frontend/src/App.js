@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import loadable from '@loadable/component'
 import './index.css';
 import './App.css';
 import NavBar from './Components/Navbar';
@@ -15,15 +16,11 @@ function App() {
     <div className='App'>
       <NavBar />
 
-      <Slideshow />
-
       <Section />
 
       <Icons />
 
       <About />
-
-      <ContactForm />
 
       <Footer />
 

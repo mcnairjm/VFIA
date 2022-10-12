@@ -3,6 +3,7 @@ import 'react-slideshow-image/dist/styles.css';
 import { Slide } from 'react-slideshow-image';
 
 
+
 const Slideshow = () => {
     const images = [
         "https://github.com/mcnairjm/VFIA/blob/335edd3950fcdaae6dbf39e5516a94d61beb90bf/frontend/src/Assets/Images/cart1.jpg?raw=true",
@@ -25,20 +26,23 @@ const Slideshow = () => {
     return (
         <Slide {...properties}>
             <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[0]})` }}>
-                
+                <div style={{ 'backgroundImage': `url(${images[0]})` }}
+                alt='A shopping cart'>
                 </div>
             </div>
             <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[1]})` }}>
+                <div style={{ 'backgroundImage': `url(${images[1]})` }}
+                alt='A grocery store employee smiling'>
                 </div>
             </div>
             <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[2]})` }}>
+                <div style={{ 'backgroundImage': `url(${images[2]})` }}
+                alt='A shopper picking out a bottle of wine'>
                 </div>
             </div>
             <div className="each-slide-effect">
-                <div style={{ 'backgroundImage': `url(${images[3]})` }}>
+                <div style={{ 'backgroundImage': `url(${images[3]})` }}
+                alt='A woman shopper smiling'>
                 </div>
             </div>
         </Slide>

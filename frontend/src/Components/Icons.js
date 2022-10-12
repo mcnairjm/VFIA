@@ -18,15 +18,15 @@ const Icons = () => {
             
 
                 <Row className='justify-content-md-center' id='row3'>
-                    <Col className='icons'><RiTeamFill />
+                    <Col className='icons'><RiTeamFill alt='Team Icon'/>
                     <p className='subhead'>Networking</p>
                     </Col>
                         
-                    <Col className='icons'><BsFillQuestionCircleFill />
+                    <Col className='icons'><BsFillQuestionCircleFill alt='Question Icon' />
                     <p className='subhead'>Resources</p>
                     </Col>
                         
-                    <Col className='icons'><GiPublicSpeaker />
+                    <Col className='icons'><GiPublicSpeaker alt='Speaker Icon'/>
                     <p className='subhead'>Representation</p>
                     </Col>        
                 </Row>

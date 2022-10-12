@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import vfia from '../Assets/Images/vfia.png';
-import MLA from '../Assets/Images/MLA.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -22,11 +21,11 @@ const Section = () => {
     });
     return (
         <>
-            <div>
+            <div className='desktop'>
             <ScrollAnimation duration={2}
                 animateIn='animate__fadeInUp'
                 animateOnce='true'
-                delay={2}>
+                >
                 <Container fluid className='section1'>
                 
                     <Row className="justify-content-md-center">
@@ -35,6 +34,7 @@ const Section = () => {
                         
                             <img src={vfia}
                                 height='150px'
+                                alt='VFIA Logo'
                                 className='full-logo'/>
                         
                         </Col>
@@ -49,6 +49,31 @@ const Section = () => {
                 </Container>
             </ScrollAnimation>
         </div>
+        <div className='mobile'>
+            <Container fluid className='section1'>
+                    
+                        <Row className="justify-content-md-center">
+                            <Col className='image' xs={5} >
+                            
+                            
+                                <img src={vfia}
+                                    height='150px'
+                                    alt='VFIA Logo'
+                                    className='full-logo'/>
+                            
+                            </Col>
+                        </Row>
+                    
+                        <Row className="justify-content-md-center" id='row2'>
+                            <Col className='about' xs={7}> 
+                                
+                                <p className='info'>The Virginia Food Industry Association (VFIA) is a nonprofit trade association that serves as an advocate for the retail and wholesale food industries in the Commonwealth of Virginia. Collectively, VFIA’s members employ more than 50,000 people statewide at more than 530 retail locations. </p> 
+                            </Col>   
+                        </Row>
+                    </Container>
+            </div>
+
+
         </>
     )
     };
