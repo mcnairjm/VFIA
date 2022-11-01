@@ -4,9 +4,6 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import { Nav, Navbar } from 'react-bootstrap';
 import loadable from '@loadable/component'
 
-const Slideshow = loadable(() => import ('./Slide.js'))
-
-
 export default class NavBar extends Component {
     scrollToTop = () => {
         scroll.scrollToTop();
@@ -104,7 +101,7 @@ export default class NavBar extends Component {
                 </Nav> */}
             </Navbar>
 
-            <Slideshow/>
+            
         </>
     )
     }

@@ -6,8 +6,6 @@ import Col from 'react-bootstrap/Col';
 import ScrollAnimation from 'react-animate-on-scroll';
 import loadable from '@loadable/component'
 
-const ContactForm = loadable(() => import ('./ContactForm'))
-
 const About = () => {
     return (
         <>
@@ -46,7 +44,7 @@ const About = () => {
                     </Row>
                 </Container>
         </div>
-        <ContactForm/>
+        
     </>
     )
 };
